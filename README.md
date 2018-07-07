@@ -15,14 +15,16 @@ A set of python modules for cyclist using powermeters.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/scikit-cycling-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/scikit-cycling-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/scikit-cycling-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/scikit-cycling-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/scikit-cycling-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/scikit-cycling-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/scikit-cycling-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/scikit-cycling-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/scikit-cycling-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/scikit-cycling-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/scikit-cycling-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/scikit-cycling-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/scikit-cycling/badges/version.svg)](https://anaconda.org/conda-forge/scikit-cycling)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/scikit-cycling/badges/downloads.svg)](https://anaconda.org/conda-forge/scikit-cycling)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-scikit--cycling-green.svg)](https://anaconda.org/conda-forge/scikit-cycling) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/scikit-cycling.svg)](https://anaconda.org/conda-forge/scikit-cycling) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/scikit-cycling.svg)](https://anaconda.org/conda-forge/scikit-cycling) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/scikit-cycling.svg)](https://anaconda.org/conda-forge/scikit-cycling) |
 
 Installing scikit-cycling
 =========================
