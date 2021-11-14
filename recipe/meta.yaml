@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -49,8 +49,6 @@ test:
     - skcycling
   commands:
     - pytest -l --pyargs skcycling -v -s
-    - conda inspect linkages -p $PREFIX scikit-cycling  # [not win]
-    - conda inspect objects -p $PREFIX scikit-cycling  # [osx]
 
 about:
   home: https://github.com/scikit-cycling/scikit-cycling
