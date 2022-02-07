@@ -38,7 +38,7 @@ requirements:
 
 test:
   requires:
-    - pytest
+    - pytest <5
   imports:
     - skcycling
   commands:
