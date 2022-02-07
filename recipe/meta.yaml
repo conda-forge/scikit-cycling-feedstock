@@ -18,29 +18,23 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - llvm-openmp  # [osx]
   host:
     - python
     - pip
     - cython
-    - numpy        # [not (win and (py35 or py36))]
-    - numpy        # [win and py35]
-    - numpy         # [win and py36]
-    - clangdev  # [osx]
-    - libcxx 4.0.*  # [osx]
-    - openmp 4.0.*  # [osx]
+    - numpy
+    - llvm-openmp  # [osx]
   run:
     - python
     - scipy
-    - {{ pin_compatible('numpy') }}   # [not (win and (py35 or py36))]
-    - {{ pin_compatible('numpy') }}   # [win and py35]
-    - {{ pin_compatible('numpy') }}   # [win and py36]
+    - {{ pin_compatible('numpy') }}
     - pandas
     - six
     - python-fitparse
     - joblib
     - scikit-learn
-    - libcxx >=4.0  # [osx]
-    - openmp >=4.0  # [osx]
+    - pandas <1
 
 test:
   requires:
