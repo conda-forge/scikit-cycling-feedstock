@@ -12,12 +12,13 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
@@ -31,9 +32,6 @@ requirements:
   run:
     - python
     - scipy
-    - {{ pin_compatible('numpy') }}   # [not (win and (py35 or py36))]
-    - {{ pin_compatible('numpy') }}   # [win and py35]
-    - {{ pin_compatible('numpy') }}   # [win and py36]
     - pandas
     - six
     - python-fitparse
@@ -49,8 +47,6 @@ test:
     - skcycling
   commands:
     - pytest -l --pyargs skcycling -v -s
-    - conda inspect linkages -p $PREFIX scikit-cycling  # [not win]
-    - conda inspect objects -p $PREFIX scikit-cycling  # [osx]
 
 about:
   home: https://github.com/scikit-cycling/scikit-cycling
